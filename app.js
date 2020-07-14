@@ -1,3 +1,4 @@
+
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
@@ -12,6 +13,86 @@ const render = require("./lib/htmlRenderer");
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
+
+inquirer.prompt(
+    [{
+        // Prompt
+        type: "list",
+        name: "Prompt",
+        message: "Would you like to build an engineering team?",
+        choices: [
+            "Yes",
+            "No",
+        ]
+    },
+// !! create a function that will stop program if user chooses "No"
+    {
+        // Name
+        type: "input",
+        message: "What's their name?",
+        name: "name"
+    },
+    {
+        // ID
+        type: "input",
+        message: "What's their ID?",
+        name: "id"
+    },
+    {
+        // Email
+        type: "input",
+        message: "What's their email?",
+        name: "email"
+    },
+    {
+        // Role
+        type: "list",
+        message: "What is their role?",
+        name: "role",
+        choices: [
+          "Manager",
+          "Engineer",
+          "Intern"
+        ]
+      },
+// !! create a function that will ask specific questions determined on which role thay choose
+
+// --- Manager --- //
+      {
+        // Office Number
+        type: "input",
+        message: "What is their office number?",
+        name: "office_number"
+    },
+
+// --- Engineer --- //
+    {
+        // GitHub Username
+        type: "input",
+        message: "What is their GitHub username?",
+        name: "github"
+    },    
+
+// --- Manager --- //
+    {
+        // School
+        type: "School",
+        message: "What school do you attend?",
+        name: "school"
+    },    
+
+
+    ]).then(function (data) {
+        console.log(data);
+
+
+
+
+
+
+
+
+
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
