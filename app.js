@@ -195,7 +195,7 @@ var newTeamMember = function () {
 
 var buildTeam = () => {
 // fs write and sync rendering of: 
-fs.writeFileSync('team.html', render(employees));
+fs.writeFileSync(outputPath, render(employees));
 
 };
 
