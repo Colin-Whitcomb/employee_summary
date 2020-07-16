@@ -27,7 +27,6 @@ inquirer.prompt(
                     "No",
                 ]
             },
-            // !! create a function that will stop program if user chooses "No"
         ])
     .then(data => {
         // console.log(data);
@@ -50,7 +49,7 @@ var askQuestions = function () {
             ]
         }, ])
         .then(data => {
-            console.log("Employee data:");
+            // console.log("Employee data:");
             // console.log(data);
             if (data.role === 'Manager') {
                 askManager();
@@ -98,7 +97,7 @@ var askManager = function () {
         var manager = new Manager(data.name, data.id, data.email, data.officeNumber);
         // console.log(manager);
         employees.push(manager);
-        console.log(employees);
+        // console.log(employees);
         newTeamMember();
     })
 }
@@ -184,7 +183,7 @@ var newTeamMember = function () {
                 },
             ])
         .then(data => {
-            // console.log(data);
+            console.log(data);
             if (data.prompt === 'Yes') {
                 askQuestions()
             } else {
