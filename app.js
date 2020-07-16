@@ -98,7 +98,7 @@ var askManager = function () {
         var manager = new Manager(data.name, data.id, data.email, data.officeNumber);
         // console.log(manager);
         employees.push(manager);
-        console.log(employees);
+        // console.log(employees);
         newTeamMember();
     })
 }
@@ -134,7 +134,7 @@ var askEngineer = function () {
         // console.log(data);
         var engineer = new Engineer(data.name, data.id, data.email, data.github);
         employees.push(engineer);
-        console.log(employees);
+        // console.log(employees);
         newTeamMember();
     })
 }
@@ -185,7 +185,7 @@ var newTeamMember = function () {
                 },
             ])
         .then(data => {
-            console.log(data);
+            // console.log(data);
             if (data.prompt === 'Yes') {
                 askQuestions()
             } else {
