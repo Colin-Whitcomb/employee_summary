@@ -19,20 +19,20 @@ _______
 * [Technologies Used](#technologies_used)
 
 * [Contact](#contact)
-_______
+
 ## Generated Page - Screen Shots 
 Desktop 
 <p align="center">
-    <img src="images/ss1.png" width="350" />
+    <img src="images/ss3.png" width="360" />
 </p>
 
 Responsive Small Screen
 <p align="center">
-    <img src="images/ss2.png" width="175" />
+    <img src="images/ss4.png" width="175" />
 </p>
  
 
-______________
+
 
 ## Technologies_Used
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -43,7 +43,6 @@ ______________
 - HTML 
 - Visual Studio Code
 - Git / GitHub / GitPage
-_________
 
 ## Contact
 
