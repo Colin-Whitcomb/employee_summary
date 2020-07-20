@@ -1,4 +1,4 @@
-# Emplyee Summary Creator
+# Employee Summary Creator
 
 ### [GitHub](https://github.com/Colin-Whitcomb) Repository Link
 
